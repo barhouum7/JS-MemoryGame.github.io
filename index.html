@@ -4,148 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Game</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <div class="info-container">
-        <div class="name">
-            Welcome <span></span> !
+
+    <main class="page landing-page">
+        <div class="control-buttons" data-bs-hover-animate="jello">
+            <span>Start The Game!</span>
         </div>
-        <div class="tries">
-            Wrong Tries: <span>0</span>
-        </div>
-    </div>
-    <div class="game-imgs-blocks">
-        <div class="game-block" data-technology="angularjs">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/angularjs.png" alt="AngularJS">
+        <section class="row align-items-center">
+            <div class="info-container col-lg-10 col-md-8 col-sm-8 col-xs-12">
+                <div class="name">
+                    Welcome <span></span> !
+                </div>
+                <div class="tries">
+                    Wrong Tries: <span>0</span>
+                </div>
             </div>
-        </div>
-        <div class="game-block" data-technology="angularjs">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/angularjs.png" alt="AngularJS">
+            <div class="game-imgs-blocks col-lg-10 col-md-8 col-sm-8 col-xs-12">
+                <div class="game-block" data-technology="angularjs">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/angularjs.png" alt="AngularJS">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="angularjs">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/angularjs.png" alt="AngularJS">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="nodejs">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/nodejs.png" alt="NodeJs">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="nodejs">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/nodejs.png" alt="NodeJS">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="css3">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/css3.png" alt="CSS3">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="css3">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/css3.png" alt="CSS3">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="vuejs">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/vue-js.png" alt="VueJS">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="vuejs">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/vue-js.png" alt="VueJS">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="mongodb">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/mongodb.png" alt="MongoDb">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="mongodb">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/mongodb.png" alt="MongoDb">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="raspberry-pi">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/raspberry-pi.png" alt="RaspberryPi">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="raspberrypi">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/raspberry-pi.png" alt="RaspberryPi">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="stack-overflow">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/stack-overflow.png" alt="Stack-OverFlow">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="stack-overflow">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/stack-overflow.png" alt="Stack-OverFlow">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="github">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/github.png" alt="GitHub">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="github">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/github.png" alt="GitHub">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="python">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/python.png" alt="Python">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="python">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/python.png" alt="Python">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="html5">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/html5.png" alt="HTML5">
+                    </div>
+                </div>
+                <div class="game-block" data-technology="html5">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="imgs/html5.png" alt="HTML5">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="game-block" data-technology="nodejs">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/nodejs.png" alt="NodeJs">
-            </div>
-        </div>
-        <div class="game-block" data-technology="nodejs">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/nodejs.png" alt="NodeJS">
-            </div>
-        </div>
-        <div class="game-block" data-technology="css3">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/css3.png" alt="CSS3">
-            </div>
-        </div>
-        <div class="game-block" data-technology="css3">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/css3.png" alt="CSS3">
-            </div>
-        </div>
-        <div class="game-block" data-technology="vuejs">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/vue-js.png" alt="VueJS">
-            </div>
-        </div>
-        <div class="game-block" data-technology="vuejs">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/vue-js.png" alt="VueJS">
-            </div>
-        </div>
-        <div class="game-block" data-technology="mongodb">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/mongodb.png" alt="MongoDb">
-            </div>
-        </div>
-        <div class="game-block" data-technology="mongodb">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/mongodb.png" alt="MongoDb">
-            </div>
-        </div>
-        <div class="game-block" data-technology="raspberry-pi">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/raspberry-pi.png" alt="RaspberryPi">
-            </div>
-        </div>
-        <div class="game-block" data-technology="raspberrypi">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/raspberry-pi.png" alt="RaspberryPi">
-            </div>
-        </div>
-        <div class="game-block" data-technology="stack-overflow">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/stack-overflow.png" alt="Stack-OverFlow">
-            </div>
-        </div>
-        <div class="game-block" data-technology="stack-overflow">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/stack-overflow.png" alt="Stack-OverFlow">
-            </div>
-        </div>
-        <div class="game-block" data-technology="github">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/github.png" alt="GitHub">
-            </div>
-        </div>
-        <div class="game-block" data-technology="github">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/github.png" alt="GitHub">
-            </div>
-        </div>
-        <div class="game-block" data-technology="python">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/python.png" alt="Python">
-            </div>
-        </div>
-        <div class="game-block" data-technology="python">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/python.png" alt="Python">
-            </div>
-        </div>
-        <div class="game-block" data-technology="html5">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/html5.png" alt="HTML5">
-            </div>
-        </div>
-        <div class="game-block" data-technology="html5">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="imgs/html5.png" alt="HTML5">
-            </div>
-        </div>
-    </div>
-    <footer>
+        </section>
+    </main>
+      <!-- My Game footer -->
+      <footer class="site-footer">
         <div class="container">
-            <div class="copy-right">
-                Created By <a href="https://github.com/barhouum7">GitHub@barhouum7</a>. All Right Reserved &COPY;
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">&COPY; 2020 By <a href="https://github.com/barhouum7">GitHub@barhouum7</a>. &REG; All Rights Reserved.
+                | Icons Credit by <a href="https://icons8.com">Icons8</a>.
+              </p>
             </div>
-            <div class="icons-credit">
-                Icons by <a href="https://icons8.com">Icons8</a> . 
-            </div>
+  
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                  <li><a class="facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="https://twitter.com/mindh4qr" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="dribbble" href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a class="linkedin" href="https://www.linkedin.com/in/ibrahimbs/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a class="github" href="https://www.github.com/barhouum7/" target="_blank"><i class="fa fa-github"></i></a></li>
+                </ul>
+              </div>
         </div>
-    </footer>
+  </footer>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+  <script src="assets/js/bs-animation.js"></script>
 </body>
 </html>
