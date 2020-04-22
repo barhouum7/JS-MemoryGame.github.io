@@ -20,5 +20,5 @@ const gBlocksOrderRange = [...Array(gameBlocks.length).keys()]
 
 // Add Order CSS Property To Game Blocks.
 gameBlocks.forEach((block, index) => {
-    block.style.order = 
+    block.style.order = gBlocksOrderRange[index]
 })
