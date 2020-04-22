@@ -7,6 +7,8 @@ html, body {
 }
 body {
     font-family: Arial, Tahoma, sans-serif;
+    background-color: rgba(247, 235, 134, 0.5);
+    
 }
 .control-buttons {
     position: fixed;
@@ -15,13 +17,15 @@ body {
     width: 100%;
     height: 100%;
     z-index: 5;
-    /* background-color: rgba(3, 169, 244, 0.950); */
+    background-color: rgba(3, 169, 244, 0.950);
+    /* transition: 0.9s ease-in-out; */
+    transition: 0.9s steps(10);
 }
-.control-buttons span {
+.control-buttons button {
     position: absolute;  
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 25%;
+    top: 40%;
+    /* transform: translate(-50%, -50%); */
     background-color: rgba(182, 110, 105, 0.849);
     color: white;
     padding: 15px 25px;
@@ -29,13 +33,106 @@ body {
     font-size: 50px;
     font-family: cursive;
     border-radius: 10px;
+    outline: none;
     cursor: pointer;
+    border: none;
+    box-shadow: 0.1rem 0.3rem 2.1rem 0 rgb(233, 235, 135);
+    text-transform: uppercase;
+    transition: 0.9s ease-in-out;
 }
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++++++++++++++++++++++     Game @Media Queries.     +++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media (max-width: 1190.98px) {
+  .control-buttons button {
+    font-size: 40px;
+    text-align: center;
+  }
+  section {
+    width: 99%;
+    padding: 5px 0 5px 37px;
+  }
+}
+@media (max-width: 992.98px) {
+  .control-buttons button {
+    font-size: 35px;
+    text-align: center;
+  }
+  section {
+    width: 99%;
+    padding: 5px 0 5px 37px;
+  }
+}
+@media (max-width: 767.98px) {
+  .control-buttons button {
+    font-size: 30px;
+    text-align: center;
+  }
+  section {
+    width: 99%;
+    padding: 5px 0 5px 37px;
+  }
+}
+@media (max-width: 615px){
+  .control-buttons button {
+    font-size: 25px;
+    text-align: center;
+  }
+  section {
+    width: 99%;
+    padding: 5px 0 5px 37px;
+  }
+}
+
+@media (max-device-width: 516px) and (orientation: landscape)
+{
+  .control-buttons button
+  {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  section {
+    width: 99%;
+    padding: 5px 0 5px 37px;
+  }
+}
+
+@media (max-width:513px)
+{
+  .control-buttons button
+  {
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  section {
+    width: 100%;
+    padding: 5px 0 5px 37px;
+  }
+}
+@media (max-width: 348px)
+{
+  .control-buttons button
+  {
+    font-size: 9px;
+    text-align: center;
+  }
+  
+  section {
+    width: 100%;
+    padding: 5px 0 5px 37px;
+  }
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++++++++++++++++++++++             FINISH .        ++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 .info-container {
     width: 1080px;
     margin: 20px auto 0;
-    background-color: #F6F6F6;
+    background-color: rgba(223, 217, 217, 0.007);
     padding: 20px;
     font-size: 24px;
     overflow: auto;
@@ -104,7 +201,7 @@ body {
 
 .site-footer
 {
-  background-color: rgba(125, 132, 165, 0.5);
+  background-color: rgba(125, 132, 165, 0.2);
   color: #645959;
   padding: auto;
   margin-top: 20px;
@@ -122,13 +219,13 @@ body {
 
 .site-footer .copyright-text a
 {
-  color: #c99575;
+  color: #4e5285;
   font-family: Trebuchet MS;
   font-size: 1.1rem;
 }
 .site-footer .copyright-text a:hover
 {
-  color: #a3a6cc;
+  color:  #a37355;
   text-decoration: none;
 }
 
