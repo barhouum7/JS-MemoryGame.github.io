@@ -155,6 +155,11 @@ body {
     flex-wrap: wrap;
     margin: 20px auto;
 }
+
+.game-imgs-blocks.no-clicking {
+  pointer-events: none;
+}
+
 .game-imgs-blocks .game-block {
     height: 200px;
     transition: transform .5s;
@@ -169,7 +174,7 @@ body {
     line-height: 200px;
 }
 .game-imgs-blocks .game-block .back {
-    background-color: #607D8B;
+    background-color: rgba(96, 125, 139, 0.178);
     transform: rotateY(180deg);
 }
 .game-imgs-blocks .game-block .back img {
@@ -191,12 +196,14 @@ body {
     font-size: 100px;
     font-weight: bold;
 }
-.game-imgs-blocks .game-block.is-flipped{
+.game-imgs-blocks .game-block.is-flipped,
+.game-imgs-blocks .game-block.is-match {
     transform: rotateY(180deg);  
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
+    pointer-events: none;
 }
 
 .site-footer
