@@ -1,4 +1,12 @@
 const btn = document.querySelector('.control-buttons button');
+const body = document.querySelector('body');
+
+// Adding Music In The Starting Of The Game
+body.addEventListener('mouseover', () => {
+    document.getElementById('startingGameSong').play()
+    // console.log('Test OK ?')
+})
+
 
 btn.addEventListener('click', () => {
     yourName = prompt('Enter Your Name:','Jhon');
@@ -8,6 +16,8 @@ btn.addEventListener('click', () => {
         document.querySelector('.name span').innerHTML = yourName;
     }
     document.querySelector('.control-buttons').remove();
+
+    document.getElementById('startingGameSong').remove()
 });
 
 const duration = 1000
