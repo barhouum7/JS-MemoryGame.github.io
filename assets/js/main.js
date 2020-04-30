@@ -1,3 +1,6 @@
+jQuery.htmlPrefilter = function( html ) {
+	return html;
+};
 const btn = document.querySelector('.control-buttons button');
 const body = document.querySelector('body');
 
